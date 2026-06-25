@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>iPhone 15 Pro Max Dynamic Island</title>
+</head>
+<body>
+    <input type="checkbox" id="music-toggle" class="toggle">
+
+    <main class="stage">
+        <section class="phone" aria-label="iPhone 15 Pro Max mockup">
+            <div class="buttons" aria-hidden="true">
+                <div class="buttons-left">
+                    <span class="button button-mute"></span>
+                    <span class="button button-volume button-volume-up"></span>
+                    <span class="button button-volume button-volume-down"></span>
+                </div>
+                <div class="buttons-right">
+                    <span class="button button-power"></span>
+                </div>
+            </div>
+
+            <div class="screen">
+                <div class="wallpaper" aria-hidden="true"></div>
+
+                <label for="music-toggle" class="dynamic-island" aria-label="Open music popup">
+                    <span class="lens lens-left"></span>
+                    <span class="lens lens-right"></span>
+                    <span class="island-copy" aria-hidden="true">
+                        <span class="island-title">I'm so lucky!</span>
+                        <span class="island-artist">Neon Waves</span>
+                    </span>
+                </label>
+
+                <aside class="music-popup" aria-label="Music player popup">
+                    <div class="popup-top">
+                        <div class="album" aria-hidden="true"></div>
+                        <div class="track-meta">
+                            <span class="eyebrow">Now Playing</span>
+                            <strong>I'm so lucky!</strong>
+                            <span>Neon Waves</span>
+                        </div>
+                        <label for="music-toggle" class="close" aria-label="Close music popup">&times;</label>
+                    </div>
+
+                    <div class="progress">
+                        <span id="current-time">1:42</span>
+                        <div class="trackbar" id="seek-bar" role="slider" aria-label="Seek music playback" aria-valuemin="0" aria-valuemax="238" aria-valuenow="102" tabindex="0">
+                            <i></i>
+                        </div>
+                        <span id="total-time">3:58</span>
+                    </div>
+
+                    <div class="controls" aria-label="Playback controls">
+                        <button type="button" class="icon-btn" aria-label="Previous track">&#9198;</button>
+                        <button type="button" class="play-btn" aria-label="Play or pause">&#9199;</button>
+                        <button type="button" class="icon-btn" aria-label="Next track">&#9197;</button>
+                    </div>
+                </aside>
+
+                <div class="home-indicator" aria-hidden="true"></div>
+            </div>
+        </section>
+    </main>
+    <div class="theme-switcher" aria-label="Display themes">
+        <button type="button" class="theme-btn" data-theme="violet" aria-label="Violet theme"></button>
+        <button type="button" class="theme-btn" data-theme="orange" aria-label="Orange theme"></button>
+        <button type="button" class="theme-btn" data-theme="gray" aria-label="Gray theme"></button>
+        <button type="button" class="theme-btn" data-theme="smokey-black" aria-label="Smokey black theme"></button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
